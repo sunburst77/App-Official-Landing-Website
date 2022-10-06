@@ -1,0 +1,353 @@
+@media (max-width: 768px) {
+
+  /* Default CSS */
+  body {
+    font-size: 16px;
+  }
+  /* Common CSS */
+  .headline-share h1 {
+    font-size: 32px;
+  }
+  .headline-share p {
+    padding: 0 20px;
+  }
+  /* Layout CSS */
+  section {
+    padding: 50px 15px;
+  }
+  .inner {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+  /* ========================== Header  ========================== */
+  .logo {
+    float: right;
+    margin-right: 15px;
+  }
+  .gnb {
+    position: fixed;
+    left: -270px;
+    top: 0;
+    float: none;
+    height: 100vh;
+    width: 250px;
+    background-color: #fff;
+    padding-left: 15px;
+    padding-top: 70px;
+    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.05);
+    transition: .5s;
+  }
+  .gnb.active {
+    left: 0;
+  }
+  .gnb a {
+    display: block;
+  }
+  /* Trigger */
+  .trigger {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 20px;
+    top: 25px;
+    cursor: pointer;
+    font-size: 30px;
+    text-align: center;
+  }
+  .trigger::before {
+    content:'\e91c';
+    font-family: xeicon;
+    transition: .5s;
+  }
+  .trigger.active::before {
+    content:'\e9af';
+  }
+  /* ========================== Section : welcome  ========================== */
+  .welcome {
+    background-color: #f9f9f9;
+    height: 100vh;
+  }
+  .slideshow {
+    display: none;
+  }
+  .welcome-heading {
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .welcome-heading span {
+    font-size: 18px;
+  }
+  .welcome-heading h1 {
+    font-size: 30px;
+  }
+  .welcome-heading p {
+    padding: 0 60px;
+    margin-bottom: 50px;
+  }
+  /* Mouse Wheele */
+  .mouse {
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    border-color: #eee;
+  }
+  .wheele {
+    background-color: #eee;
+  }
+  /* ========================== Section : ceo-access ========================== */
+  .ceo-content > div {
+    float: none;
+    width: 100%;
+  }
+  .ceo-left {
+    padding-right: 0;
+    text-align: center;
+  }
+  .ceo-right > div {
+    float: none;
+  }
+  .ceo-msg {
+    width: 100%;
+  }
+  .ceo-photo {
+    width: 100%;
+  }
+  .access-content > div {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .access-left {
+    padding-right: 0;
+    padding-top: 20px;
+  }
+  .access-left h2 {
+    font-size: 26px;
+  }
+  .btn-download {
+    margin-bottom: 50px;
+  }
+  .btn-download img {
+    height: 50px;
+  }
+  .access-right img {
+    display: block;
+    float: none;;
+    width: 100%;
+  }
+  /* ========================== Section : banner ========================== */
+  .banner {
+    padding-top: 30px;
+    background-position: bottom 30px right 20px;
+    background-size: 50px;
+  }
+  .banner-content > div {
+    float: none;
+    width: 100%;
+  }
+  .tab-btn {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .tab-btn label {
+    width: 27%;
+  }
+  .tab-btn label span {
+    display: -webkit-box;
+    max-height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  .tab-btn label em {
+    width: 100px;
+    height: 100px;
+    padding-top: 15px;
+  }
+  .tab {
+    padding: 20px;
+    text-align: center;
+  }
+  .tab h2 {
+    font-size: 26px;
+  }
+  /* ========================== Section : feature ========================== */
+  .feature-content {
+    margin: 50px 0;
+  }
+  .feature-content > div {
+    float: none;
+    width: 100%;
+  }
+
+  .feature-mockup img {
+    width: 100%;
+  }
+  .feature-about {
+    padding: 0 10px;
+    padding-top: 80px;
+  }
+  .feature-about h2 {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+  /* Change Order With Flex */
+  .flex-order {
+    display: flex;
+    flex-direction: column;
+  }
+  .flex-order > div:first-child {
+    order: 2;
+  }
+  
+  /* ========================== Section : vision ========================== */
+  .vision {
+    padding-top: 0;
+  }
+  .vision-content > div {
+    float: none;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .vision-item-headline {
+    width: 80%;
+  }
+  .vision-item-desc {
+    padding: 20px 0;
+  }
+  .vision-item-photo {
+    padding: 20px;
+    background: #f9f9f9;
+  }
+  /* ========================== Section : faq ========================== */
+  .faq-content > div {
+    float: none;
+    width: 100%;
+    padding: 0;
+    min-height: 600px;
+  }
+  /* .award-content */
+  .award-image img {
+    width: 100%;
+  }
+  /* ========================== Section : review ========================== */
+  .review {
+    padding: 100px 0;
+  }
+  .review-content {
+    width: 100%;
+  }
+  .slogan {
+    font-size: 22px;
+  }
+  .review-slider div p {
+    padding: 0 15px;
+  }
+  .review-slider .slick-arrow {
+    display: none !important;
+  }
+  /* ========================== Section : focus ========================== */
+  .focus-content > div {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+  }
+  .focus-item {
+    margin-bottom: 50px;
+  }
+  /* ========================== Section : guide ========================== */
+  .guide {
+    padding-bottom: 100px;
+  }
+  .guide-content > div {
+    float: none;
+  }
+  .guide-slider {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  .guide-video {
+    width: 100%;
+    text-align: center;
+  }
+  .guide-video h1 {
+    font-size: 22px;
+  }
+  .video-headline {
+    font-size: 20px;
+  }
+  .video-headline img {
+    height: 20px;
+  }
+  .video-frame {
+    width: 100%;
+    height: 300px;
+  }
+  /* ========================== Section : news ========================== */
+  .news {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .news-content > div {
+    float: none;
+    width: 100%;
+  }
+  .news-left {
+    margin-bottom: 15px;
+  }
+  .news-big {
+    width: 100%;
+    height: 450px;
+  }
+  .news-items > div {
+    display: block;
+    width: 100%;
+  }
+  .news-items {
+    margin-bottom: 0;
+  }
+  .news-thum {
+    margin-bottom: 15px;
+  }
+  .news-thum p {
+    margin-top: 10px;
+  }
+  .news-thum p .date {
+    margin-top: 0;
+    text-align-last: left;
+  }
+  /* ========================== Footer ========================== */
+  footer {
+    padding: 40px 15px;
+    text-align: center;
+  }
+  .footer-content > div {
+    float: none;
+  }
+  .footer-logo {
+    width: 100%;
+  }
+  .copyright {
+    width: 100%;
+  }
+  .policy {
+    float: none;
+    margin: 10px 0;
+  }
+  .sns {
+    float: none;
+  }
+  /* ######################## Video Modal ######################## */
+  .video-content {
+    width: 90%;
+  }
+  .video-content iframe {
+    width: 100%;
+    height: 280px;
+  }
+}

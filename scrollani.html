@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스크롤하면 시작되는 애니메이션 - wow.js 및 aos.js</title>
+  <script src="js/wow.min.js"></script>
+  <style>
+    .parent {
+      border: 1px solid #000;
+      padding: 20px;
+      overflow: hidden;
+      width: 800px;
+    }
+    .parent div {
+      float: left;
+      width: 50%;
+      height: 200px;
+      border: 1px solid #000;
+      text-align: center;
+      line-height: 200px;
+      font-size: 3em;
+      box-sizing: border-box;
+    }
+    .ltr {
+      animation: ltr 1s linear both;
+    }
+    .rtl {
+      animation: rtl 1s linear both;
+    }
+    @keyframes ltr {
+      0% {
+        opacity: 0;
+        transform: translateX(-150px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    @keyframes rtl {
+      0% {
+        opacity: 0;
+        transform: translateX(150px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  </style>
+  <script>
+    wow = new WOW(
+    {
+      boxClass: 'wow',      // default
+      offset: 150,          // default
+      mobile: true,       // default
+      live: true        // default
+    }
+  )
+  wow.init();
+  </script>
+</head>
+<body>
+  <h1>Scroll Reveal Animation</h1>
+  <img src="https://via.placeholder.com/800x1500" alt="">
+  <div class="parent">
+    <div class="left ltr wow">Left</div>
+    <div class="right rtl wow">Right</div>
+  </div>
+  <img src="https://via.placeholder.com/800x500" alt="">
+  <div class="parent">
+    <div class="left ltr wow">Left</div>
+    <div class="right rtl wow">Right</div>
+  </div>
+</body>
+</html>
